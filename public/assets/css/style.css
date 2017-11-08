@@ -1,0 +1,37 @@
+html, body {
+  min-height: 100%;
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #0B1C36;
+}
+
+.jumbotron {
+	background-color: #0B1C36;
+}
+#font-color{
+	color:#D8BF78;
+}
+#color{
+	background-color: #3B5E78;
+}
+
+#fontcolor{
+	color:#D8BF78;
+}
+
+#colors{
+	color:#D8BF78;
+	background-color: #15509F;
+}
+#btn-color{
+	color:#D7D98E;
+	background-color: #892438;
+	border-color: #892438;
+}
+#font-color{
+	color:#D8BF78;
+}
+#backcolor{
+	background-color: #212529;
+}
