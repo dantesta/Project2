@@ -2,35 +2,181 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    
-    <link rel="stylesheet" href="https://blackrockdigital.github.io/startbootstrap-shop-homepage/vendor/bootstrap/css/bootstrap.min.css">
- 
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Which Chracter Are You?</title>
+
+    <title>Star Wars Quiz</title>
+
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
 
 </head>
 
 <body>
-    <div class="jumbotron heading-content text-center">
-  <h1 class="display-3" id = "font-color">Project 2!</h1>
-  </div>
-    <div class="card">
-        <img class="card-img-top" src="http://assets2.ignimgs.com/2015/08/06/darth-vader-crossed-arms-1280jpg-88461e1280wjpg-67c0c2_1280w.jpg" id="backcolor" alt="Card image cap">
-        <div class="card-body" id = "color">
-            <h4 class="card-title" id = "fontcolor">Question 1</h4>
-            <p class="card-text" id = "font-color" >Some quick example text to build on the card title and make up the bulk of the card's content.
-            </p>
-            <ul class="list-group list-group-flush">
-                <li id = "colors" class="list-group-item list-group-item-action">Answer 1</li>
-                <li id = "colors" class="list-group-item list-group-item-action">Answer 2 </li>
-                <li id = "colors" class="list-group-item list-group-item-action">Answer 3</li>
-                <li id = "colors" class="list-group-item list-group-item-action">Answer 4 </li>
-                <li id = "colors" class="list-group-item list-group-item-action">Answer 5</li>
-            </ul>
-            <a href="#!" id = "btn-color" class="btn btn-primary">Go to next question</a>
+    <div class="container">
+        <h1>Quiz Questions</h1>
+        <br><br>
+
+        <h2>About You:</h2>
+
+        <div class="form-group">
+            <label class="control-label" for="name">Full Name:</label>
+            <input type="text" name="" id="name" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label" for="photo">Link to Photo of Yourself:</label>
+            <input type="text" name="" id="photo" class="form-control" required>
+        </div>
+        <br><br>
+
+        <div class="form-group">
+            <h3><strong>Question #1</strong></h3>
+
+            <label class="control-label" for="q1">Choose a color:</label>
+            <select data-placeholder="" class="chosen-select" id="q1">
+                  <option value=""></option>
+            <option value="1">Red</option>
+            <option value="2">Blue</option>
+            <option value="3">Green</option>
+            <option value="4">Purple</option>
+            <option value="5">Yellow</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+            <h3><strong>Question #2</strong></h3>
+            <label class="control-label" for="q2">Which best describes your personality?</label>
+            <select data-placeholder="" class="chosen-select" id="q2">
+              <option value=""></option>
+              <option value="1">Quiet and Reserved</option>
+              <option value="2">Outspoken and Assertive</option>
+              <option value="3">Kind and Conscientious</option>
+              <option value="4">Logical and Practical</option>
+              <option value="5">Adventurous and Creative</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <h3><strong>Question #3</strong></h3>
+            <label class="control-label" for="q3">What role best describes you?</label>
+            <select data-placeholder="" class="chosen-select" id="q3">
+              <option value=""></option>
+              <option value="1">Lone Wolf</option>
+              <option value="2">Leader</option>
+              <option value="3">Diplomat</option>
+              <option value="4">Team Player</option>
+              <option value="5">Enforcer</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <h3><strong>Question #4</strong></h3>
+            <label class="control-label" for="q4">Which weapon would you choose?</label>
+            <select data-placeholder="" class="chosen-select" id="q4">
+            <option value=""></option>
+            <option value="1">Blaster</option>
+            <option value="2">Lightsaber</option>
+            <option value="3">Staff</option>
+            <option value="4">Jedi Mind Trick</option>
+            <option value="5">Force Lightning</option>
+        </select>
+        </div>
+
+        <div class="form-group">
+            <h3><strong>Question #5</strong></h3>
+            <label class="control-label" for="q5">If a fight breaks out, what do you do?</label>
+            <select data-placeholder="" class="chosen-select" id="q5">
+            <option value=""></option>
+            <option value="1">Take on everyone by yourself</option>
+            <option value="2">Jump in without hesitation</option>
+            <option value="3">Try to stop the fight</option>
+            <option value="4">Run away and hide</option>
+            <option value="5">Protect your friends</option>
+        </select>
+        </div>
+
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary btn-lg" id="submit">Submit</button>
+
+        <br><br>
+        <br><br>
+        <!-- Modal -->
+        <div id="resultsModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h2 class="modal-title"><strong>Congrats, you are: </strong></h2>
+                    </div>
+                    <div class="modal-body">
+                        <h2 id="matchName"></h2>
+                        <img id="matchImg" src="" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+    <script src=" https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+    
+        $(".chosen-select").chosen();
+        $("#submit").on("click", function(event) {
+            event.preventDefault();
+            let scoreArr = [];
+            let validated = true;
+            $('.form-control').each(function() {
+                if ($(this).val() === '') {
+                    validated = false;
+                    $(this).parent().addClass('has-error');
+                } else {
+                    $(this).parent().removeClass('has-error');
+                }
+            });
+            $('.chosen-select').each(function() {
+                if ($(this).val() === '') {
+                    validated = false;
+                    $(this).parent().addClass('has-error');
+                } else {
+                    $(this).parent().removeClass('has-error');
+                }
+            });
+            if (validated) {
+                $('.chosen-select').each(function() {
+                    scoreArr.push($(this).val());
+                });
+                for (var i = 0; i < scoreArr.length; i++) {
+                    scoreArr[i] = parseInt(scoreArr[i]);
+                }
+                var newSurvey = {
+                    name: $("#name").val().trim(),
+                    picture: $("#photo").val().trim(),
+                    scores: scoreArr
+                };
+                console.log(newSurvey);
+                $.post("/api/characters", newSurvey)
+                    .done(function(data) {
+                        console.log(data);
+                        $("#resultsModal").modal('toggle');
+                        $("#matchName").text(data[0].name);
+                        $('#matchImg').attr("src", data[0].picture);
+                    });
+            } else {
+                alert('You missed an answer!');
+            }
+        });
+    </script>
 </body>
 
 </html>
