@@ -1,4 +1,4 @@
-var friends = require("../data/friends.js");
+var friends = require("../data/characters.js");
 
 
 
@@ -7,14 +7,14 @@ var friends = require("../data/friends.js");
 module.exports = function(app) {
 
 
-  app.get("/api/friends", function(req, res) {
+  app.get("/api/characters", function(req, res) {
     res.json(Friends);
   });
 
   
 
 
-  app.post("/api/friends", function(req, res) {
+  app.post("/api/characters", function(req, res) {
  
     if (friends.length < 5) {
       friends.push(req.body);
