@@ -9,10 +9,9 @@ module.exports = function(sequelize, DataTypes) {
   });
 
 
+	return User;
 
-  return User;
-<<<<<<< HEAD
 };
-=======
-};
->>>>>>> 81f8b0a3aa804c782d763068b6a8f4fba90f975a
+
+
+
