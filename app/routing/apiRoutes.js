@@ -6,6 +6,7 @@ var characterList = require('../data/character.js');
 
 router.post('/api/characters', function(req, res) {
     let newSurvey = req.body;
+    console.log(req.body)
     let characterPick;
     let characterConnect = [];
 
