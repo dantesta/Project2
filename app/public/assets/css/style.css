@@ -3,7 +3,8 @@ html, body {
   min-width: 100%;
   margin: 0;
   padding: 0;
-  background: #0B1C36;
+  font-family: 'Audiowide', cursive;
+  background-image: url("https://wallpapercave.com/wp/bV3WiYh.jpg")
 }
 
 .body{
@@ -37,4 +38,25 @@ html, body {
 }
 body{
 	color:#D8BF78;
+}
+.list-group-item {
+	background-color: #337ab7;
+}
+
+.form-control{
+	background-color: #337ab7;
+	color: #D8BF78;
+	border-color: #337ab7;
+}
+.btn-primary{
+	color: #D8BF78;
+}
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{
+	background-color: #D8BF78;
+}
+.list-group-item.active:hover{
+	background-color: #D8BF78;
+}
+a.list-group-item, button.list-group-item{
+	color: #D8BF78;
 }
