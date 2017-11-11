@@ -41,6 +41,7 @@ body{
 }
 .list-group-item {
 	background-color: #337ab7;
+	border-color: #010101;
 }
 
 .form-control{
@@ -51,12 +52,17 @@ body{
 .btn-primary{
 	color: #D8BF78;
 }
+a.list-group-item:focus, a.list-group-item:hover, button.list-group-item:focus, button.list-group-item:hover{
+	background-color: #D8BF78;
+	color:#337ab7;
+}
 .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{
 	background-color: #D8BF78;
 }
-.list-group-item.active:hover{
-	background-color: #D8BF78;
-}
+
 a.list-group-item, button.list-group-item{
 	color: #D8BF78;
+}
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{
+	color:#337ab7;
 }
