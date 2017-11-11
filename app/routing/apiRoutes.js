@@ -2,6 +2,26 @@ var express = require("express");
 var path = require("path");
 var router = express.Router();
 var characterList = require('../data/character.js');
+var db = require("../models");
+
+app.post("/api/posts", function(req, res) {
+    db.Post.create(req.body).then(function(dbPost) {
+      res.json(dbPost);
+    });
+});
+
+app.put("/api/posts", function(req, res) {
+    db.Post.update(
+      req.body,
+      {
+        where: {
+          id: req.body.id
+        }
+      }).then(function(dbPost) {
+        res.json(dbPost);
+      });
+  });
+};
 
 
 router.post('/api/characters', function(req, res) {
