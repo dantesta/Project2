@@ -17,6 +17,7 @@
 
 <body>
     <div class="container">
+    <h1>Star Wars Personality Quiz</h1>
         <h1>Quiz Questions</h1>
         <br><br>
 
@@ -167,7 +168,7 @@
                     scores: scoreArr
                 };
                 console.log(newSurvey);
-                $.post("/api/characters", newSurvey)
+                $.post("/api/starwars", newSurvey)
                     .done(function(data) {
                         console.log(data);
                         $("#resultsModal").modal('toggle');

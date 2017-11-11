@@ -71,3 +71,12 @@ If a fight breaks out, what do you do?
 4. Run away and hide
 5. Protect your friends
 
+
+
+To-do
+Connect Database
+Finish Styling
+Create new categories
+
+
+

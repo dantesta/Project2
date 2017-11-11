@@ -1,4 +1,4 @@
-var characterList = [{
+var starWarsList = [{
 
     name: 'Darth Vader',
     picture: 'https://www.sideshowtoy.com/wp-content/uploads/2014/07/star-wars-darth-vader-life-size-feature-400184.jpg',
@@ -55,4 +55,5 @@ var characterList = [{
 }];
 
 
-module.exports = characterList;
+module.exports = starWarsList;
+
