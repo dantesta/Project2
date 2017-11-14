@@ -118,35 +118,35 @@ router.get('/api/marvel', function(req, res) {
 
 
 router.post('/api/rickAndMorty', function(req, res) {
->>>>>>> 110ab395a0c54ed6f52e313cf020f52f26e7b348
+
     let newSurvey = req.body;
     let characterPick;
     let characterConnect = [];
 
-<<<<<<< HEAD
+
     for (var i = 0; i < characterList.length; i++) {
         var totalDifference = 0;
 
         for (var j = 0; j < 5; j++) {
             let scoreDiff = Math.abs(characterList[i].scores[j] - newSurvey.scores[j]);
-=======
-    for (var i = 0; i < rickAndMortyList.length; i++) {
-        var totalDifference = 0;
+
+        for (var i = 0; i < rickAndMortyList.length; i++) {
+            var totalDifference = 0;
 
         for (var j = 0; j < 5; j++) {
             let scoreDiff = Math.abs(rickAndMortyList[i].scores[j] - newSurvey.scores[j]);
->>>>>>> 110ab395a0c54ed6f52e313cf020f52f26e7b348
+
             totalDifference += scoreDiff;
         }
 
         characterConnect.push({
-<<<<<<< HEAD
+
             name: characterList[i].name,
             picture: characterList[i].picture,
-=======
+
             name: rickAndMortyList[i].name,
             picture: rickAndMortyList[i].picture,
->>>>>>> 110ab395a0c54ed6f52e313cf020f52f26e7b348
+
             totalDiff: totalDifference
             });
         }
@@ -156,7 +156,7 @@ router.post('/api/rickAndMorty', function(req, res) {
         if (obj.totalDiff < maxScore) maxScore = obj.totalDiff;
     });
 
-<<<<<<< HEAD
+
     characterPick = characterConnect.filter(function(e) { return e.totalDiff == maxScore; });
 
     res.json(characterPick);
@@ -171,8 +171,8 @@ router.get('/api/characters', function(req, res) {
 module.exports = router;
 
  
-=======
-    rickAndMortyList = characterConnect.filter(function(e) { return e.totalDiff == maxScore; });
+
+rickAndMortyList = characterConnect.filter(function(e) { return e.totalDiff == maxScore; });
 
     res.json(rickAndMortyList);
     rickAndMortyList.push(newSurvey);
@@ -192,6 +192,5 @@ module.exports = router;
 
 
 
->>>>>>> 110ab395a0c54ed6f52e313cf020f52f26e7b348
 
 
