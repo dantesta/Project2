@@ -1,8 +1,21 @@
 {
+<<<<<<< HEAD
   "name": "project2",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+=======
+  "name": "Project2",
+  "version": "1.0.0",
+  "description": "Dan Testa, Mike Troutman, Adrian Sirko",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+>>>>>>> 110ab395a0c54ed6f52e313cf020f52f26e7b348
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -11,6 +24,10 @@
     "type": "git",
     "url": "git+https://github.com/dantesta/Project2.git"
   },
+<<<<<<< HEAD
+=======
+  "keywords": [],
+>>>>>>> 110ab395a0c54ed6f52e313cf020f52f26e7b348
   "author": "",
   "license": "ISC",
   "bugs": {

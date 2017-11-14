@@ -9,12 +9,15 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
 
 </head>
 
 <body>
     <div class="container">
+    <h1>Star Wars Personality Quiz</h1>
         <h1>Quiz Questions</h1>
         <br><br>
 
@@ -26,8 +29,8 @@
         </div>
 
         <div class="form-group">
-            <label class="control-label" for="photo">Link to Photo of Yourself:</label>
-            <input type="text" name="" id="photo" class="form-control" required>
+            <label class="control-label" for="photo">Email Address (Optional):</label>
+            <input type="text" name="" id="photo" class="form-control">
         </div>
         <br><br>
 
@@ -36,7 +39,7 @@
 
             <label class="control-label" for="q1">Choose a color:</label>
             <select data-placeholder="" class="chosen-select" id="q1">
-                  <option value=""></option>
+	 		      <option value=""></option>
             <option value="1">Red</option>
             <option value="2">Blue</option>
             <option value="3">Green</option>
@@ -48,14 +51,14 @@
         <div class="form-group">
             <h3><strong>Question #2</strong></h3>
             <label class="control-label" for="q2">Which best describes your personality?</label>
-            <select>
-              <option hidden ></option>
+            <select data-placeholder="" class="chosen-select" id="q2">
+              <option value=""></option>
               <option value="1">Quiet and Reserved</option>
               <option value="2">Outspoken and Assertive</option>
               <option value="3">Kind and Conscientious</option>
               <option value="4">Logical and Practical</option>
               <option value="5">Adventurous and Creative</option>
-            </select>
+      	    </select>
         </div>
 
         <div class="form-group">
@@ -75,26 +78,26 @@
             <h3><strong>Question #4</strong></h3>
             <label class="control-label" for="q4">Which weapon would you choose?</label>
             <select data-placeholder="" class="chosen-select" id="q4">
-            <option value=""></option>
+	 		<option value=""></option>
             <option value="1">Blaster</option>
             <option value="2">Lightsaber</option>
             <option value="3">Staff</option>
             <option value="4">Jedi Mind Trick</option>
             <option value="5">Force Lightning</option>
-        </select>
+      	</select>
         </div>
 
         <div class="form-group">
             <h3><strong>Question #5</strong></h3>
             <label class="control-label" for="q5">If a fight breaks out, what do you do?</label>
             <select data-placeholder="" class="chosen-select" id="q5">
-            <option value=""></option>
+	 		<option value=""></option>
             <option value="1">Take on everyone by yourself</option>
             <option value="2">Jump in without hesitation</option>
             <option value="3">Try to stop the fight</option>
             <option value="4">Run away and hide</option>
             <option value="5">Protect your friends</option>
-        </select>
+      	</select>
         </div>
 
         <br><br>
@@ -165,7 +168,7 @@
                     scores: scoreArr
                 };
                 console.log(newSurvey);
-                $.post("/api/characters", newSurvey)
+                $.post("/api/starwars", newSurvey)
                     .done(function(data) {
                         console.log(data);
                         $("#resultsModal").modal('toggle');
@@ -177,6 +180,17 @@
             }
         });
     </script>
+
+
+
+    <style type="text/css">
+
+
+        
+        #matchImg {
+    width: 500px;
+}
+    </style>
 </body>
 
 </html>

@@ -11,8 +11,20 @@ router.get('/', function(req, res) {
 });
 
 
-router.get('/survey', function(req, res) {
-    res.sendFile(path.join(__dirname, "/../public/survey.html"));
+
+router.get('/starWarsSurvey', function(req, res) {
+    res.sendFile(path.join(__dirname, "/../public/starWarsSurvey.html"));
 });
+
+router.get('/marvelSurvey', function(req, res) {
+    res.sendFile(path.join(__dirname, "/../public/marvelSurvey.html"));
+});
+
+router.get('/rickSurvey', function(req, res) {
+    res.sendFile(path.join(__dirname, "/../public/rickSurvey.html"));
+});
+
+
+
 
 module.exports = router;
