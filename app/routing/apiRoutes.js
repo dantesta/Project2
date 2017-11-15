@@ -1,14 +1,7 @@
 var express = require("express");
 var path = require("path");
 var router = express.Router();
-
-var characterList = require('../data/character.js');
-var db = require("../models");
-
-
-
-
-router.post('/api/characters', function(req, res) {
+var db = require("../../models");
 
 
 var starWarsList = require('../data/starWars.js');
@@ -118,35 +111,21 @@ router.get('/api/marvel', function(req, res) {
 
 
 router.post('/api/rickAndMorty', function(req, res) {
-
     let newSurvey = req.body;
     let characterPick;
     let characterConnect = [];
 
-
-    for (var i = 0; i < characterList.length; i++) {
+    for (var i = 0; i < rickAndMortyList.length; i++) {
         var totalDifference = 0;
 
         for (var j = 0; j < 5; j++) {
-            let scoreDiff = Math.abs(characterList[i].scores[j] - newSurvey.scores[j]);
-
-        for (var i = 0; i < rickAndMortyList.length; i++) {
-            var totalDifference = 0;
-
-        for (var j = 0; j < 5; j++) {
             let scoreDiff = Math.abs(rickAndMortyList[i].scores[j] - newSurvey.scores[j]);
-
             totalDifference += scoreDiff;
         }
 
         characterConnect.push({
-
-            name: characterList[i].name,
-            picture: characterList[i].picture,
-
             name: rickAndMortyList[i].name,
             picture: rickAndMortyList[i].picture,
-
             totalDiff: totalDifference
             });
         }
@@ -156,23 +135,7 @@ router.post('/api/rickAndMorty', function(req, res) {
         if (obj.totalDiff < maxScore) maxScore = obj.totalDiff;
     });
 
-
-    characterPick = characterConnect.filter(function(e) { return e.totalDiff == maxScore; });
-
-    res.json(characterPick);
-    characterList.push(newSurvey);
-
-});
-
-router.get('/api/characters', function(req, res) {
-    res.json(characterList);
-});
-
-module.exports = router;
-
- 
-
-rickAndMortyList = characterConnect.filter(function(e) { return e.totalDiff == maxScore; });
+    rickAndMortyList = characterConnect.filter(function(e) { return e.totalDiff == maxScore; });
 
     res.json(rickAndMortyList);
     rickAndMortyList.push(newSurvey);
@@ -184,13 +147,22 @@ router.get('/api/rickAndMorty', function(req, res) {
     res.json(rickAndMortyList);
 });
 
+router.post("/api/newuser", function(req,res) {
+  console.log(req.body);
+
+  db.User.create({
+    name: req.body.name,
+    email: req.body.email,
+    username: req.body.username
+  }).then(function(data) {
+    res.json(data);
+  }).catch(function(err) {
+    if (err) throw err;
+  })
+});
+
+
+
 
 
 module.exports = router;
-
-
-
-
-
-
-
