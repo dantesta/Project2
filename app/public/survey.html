@@ -151,45 +151,7 @@
                         $("#matchName").text(data[0].name);
                         $('#matchImg').attr("src", data[0].picture);
                     });
-                // $('.form-control').each(function() {
-                //     if ($(this).val() === '') {
-                //         validated = false;
-                //         $(this).parent().addClass('has-error');
-                //     } else {
-                //         $(this).parent().removeClass('has-error');
-                //     }
-                // });
-                // $('.chosen-select').each(function() {
-                //     if ($(this).val() === '') {
-                //         validated = false;
-                //         $(this).parent().addClass('has-error');
-                //     } else {
-                //         $(this).parent().removeClass('has-error');
-                //     }
-                // });
-                // if (validated) {
-                //     $('.chosen-select').each(function() {
-                //         scoreArr.push($(this).val());
-                //     });
-                //     for (var i = 0; i < scoreArr.length; i++) {
-                //         scoreArr[i] = parseInt(scoreArr[i]);
-                //     }
-                //     var newSurvey = {
-                //         name: $("#name").val().trim(),
-                //         picture: $("#photo").val().trim(),
-                //         scores: scoreArr
-                //     };
-                //     console.log(newSurvey);
-                //     $.post("/api/characters", newSurvey)
-                //         .done(function(data) {
-                //             console.log(data);
-                //             $("#resultsModal").modal('toggle');
-                //             $("#matchName").text(data[0].name);
-                //             $('#matchImg').attr("src", data[0].picture);
-                //         });
-                // } else {
-                //     alert('You missed an answer!');
-                // }
+                
             });
             </script>
 </body>
