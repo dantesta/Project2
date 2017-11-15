@@ -6,47 +6,47 @@ var characterList = [{
     // 12
 }, {
     name: 'Han Solo',
-    picture: 'images/Hansolo.jpg',
+    picture: 'assets/images/Hansolo.jpg',
     scores: [5,5,1,1,2]
     // 14
 }, {
     name: 'Luke Skywalker',
-    picture: 'images/luke.png',
+    picture: 'assets/images/luke.png',
     scores: [3,4,4,2,5]
     // 18
 }, {
     name: 'Princess Leia',
-    picture: 'images/leia.jpeg',
+    picture: 'assets/images/leia.jpeg',
     scores: [4,2,3,1,3]
     // 13
 }, {
     name: 'Darth Maul',
-    picture: 'images/maul.png',
+    picture: 'assets/images/maul.png',
     scores: [1,1,5,2,1]
     // 10
 }, {
     name: 'Obi Wan Kenobi',
-    picture: 'images/obiwan.jpg',
+    picture: 'assets/images/obiwan.jpg',
     scores: [2,4,4,4,5]
     // 19
 }, {
     name: 'Emperor Palpitine',
-    picture: 'images/emperor.jpeg',
+    picture: 'assets/images/emperor.jpeg',
     scores: [1,2,2,5,1]
     // 11
 }, {
     name: 'Yoda',
-    picture: 'images/yoda.png',
+    picture: 'assets/images/yoda.png',
     scores: [3,3,3,4,3]
     // 16
 }, {
     name: 'Kylo Ren',
-    picture: 'images/kyloren.jpg',
+    picture: 'assets/images/kyloren.jpg',
     scores: [4,2,5,2,2]
     // 15
 }, {
     name: 'Rey',
-    picture: 'images/rey.png',
+    picture: 'assets/images/rey.png',
     scores: [4,5,1,3,4]
     // 17
 }];

@@ -58,6 +58,8 @@ body {
 
 .btn-primary {
     color: #D8BF78;
+    background-color: #337ab7;
+    border-color: #337ab7;
 }
 
 a.list-group-item:focus,
@@ -97,6 +99,29 @@ button.list-group-item {
 
 .btn-danger:hover {
     color: #D8BF78;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+.modal-content{
+	background-color: #337ab7;
+}
+.btn-default{
+	color: #D8BF78;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+.btn-default:hover{
+	color: #337ab7;
+    background-color: #D8BF78;
+    border-color: #D8BF78;
+}
+.btn-primary:hover{
+	color: #337ab7;
+    background-color: #D8BF78;
+    border-color: #D8BF78;
+}
+.btn-primary.focus, .btn-primary:focus{
+	color: #D8BF78;
     background-color: #337ab7;
     border-color: #337ab7;
 }
