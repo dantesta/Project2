@@ -1,56 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
 
-    <title>Which Character Are You? Personality Quiz!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project 2 Home</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Which Character Are You?</a>
 
 
-</head>
+      </div>
+    </nav><br>
 
-<body>
-<div class="header">
-
-    <h1>Which Character Are You? Personality Quiz!</h1>
-    <p>Choose a Topic, Take a Quiz!</p>
-
-</div>
-        <div class="jumbotron">
-            
+        <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+                    <div class="intro-text">
+          <span class="name">Take the Personality Quiz!</span>
 
 
-    <div class="row">
-        <div class="col-sm-4">
-            <img src="https://images.moviepilot.com/images/c_limit,q_auto:good,w_600/fphwgmpl5aanu4togqqa/original-star-wars-poster-the-force-awakens-style.jpg" width="300px">
-            <p><a class="btn btn-danger" href="/starWarsSurvey" role="button">Start Star Wars Quiz</a></p>
         </div>
+        <hr class="star-primary">
+        <h2 class="text-center">Login</h2>
+        <br>
+        
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+            <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+            <form name="sentMessage" id="contactForm" novalidate>
+            <div class="row">
+              <div class="control-group col-sm-4">
+                <div class="form-group floating-label-form-group controls">
+                 
+                  <input class="form-control" id="name" type="text" placeholder="Name" required data-validation-required-message="Please enter your name.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="control-group col-sm-4">
+                <div class="form-group floating-label-form-group controls">
+             
+                  <input class="form-control" id="email" type="email" placeholder="Email Address" required data-validation-required-message="Please enter your email address.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="control-group col-sm-4">
+                <div class="form-group floating-label-form-group controls">
+                
+                  <input class="form-control" id="username" type="text" placeholder="User Name" required data-validation-required-message="Please enter your name.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              </div>
 
-        <div class="col-sm-4">
-            <img src="https://vignette.wikia.nocookie.net/marvelheroes/images/9/98/Avengers-movie-poster-1.jpg/revision/latest?cb=20170713041606" width="300px">
-            <p><a class="btn btn-danger" href="/marvelSurvey" role="button">Start Marvel Quiz</a></p>
+              <div id="success"></div>
+              <div class="form-group" style="text-align:center;">
+                <button type="submit" class="btn btn-success btn-lg" id="sendMessageButton">Submit</button>
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <div class="col-sm-4">
-        <img src="https://www.gbposters.com/media/catalog/product/cache/1/image/737x938/17f82f742ffe127f42dca9de82fb58b1/r/i/rick-and-morty-group-maxi-poster-1.16.jpg" width="300px">
-            <p><a class="btn btn-danger" href="/rickSurvey" role="button">Start Quiz Here</a></p>
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+
+      <div class="row">
+      <div class="col-sm-4">
+        <img class="img-fluid" src="assets/images/starWars.png" width="300px">
+        <p><a class="btn btn-primary" href="/starWarsSurvey" role="button">Star Wars</a></p>
+      </div>
+      <div class="col-sm-4">
+        <img class="img-fluid" src="assets/images/theAvengers.png" width="300px">
+        <p><a class="btn btn-primary" href="/marvelSurvey" role="button">Marvel</a></p>
+      </div>
+      <div class="col-sm-4">
+        <img class="img-fluid" src="assets/images/rickAndMorty.png" width="300px">
+        <p><a class="btn btn-primary" href="/rickSurvey" role="button">Rick and Morty</a></p>
+      </div>
+
+      </div>
+
+      </div>
+    </header>
+
+    <!-- Footer -->
+    <footer class="text-center">
+
+      <div class="footer-below">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              Copyright &copy; 2017 Adrian Sirko, Daniel Testa, Mike Troutman
+            </div>
+          </div>
         </div>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top d-lg-none">
+      <a class="btn btn-primary js-scroll-trigger" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
     </div>
-
-    </div>
-
-
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src=" https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+<script type="text/javascript">
+  
+  $(document).ready(function() {
+  
+  var nameInput = $("#name");
+  var userList = $("tbody");
+  var userContainer = $(".user-container");
+  var emailInput = $("#email");
+  var userName = $("#username");
+
+ 
+  
+  $(document).on("submit", "#contactForm", handleUserFormSubmit);
+  
+  
+  function handleUserFormSubmit(event) {
+    event.preventDefault();
+    
+    if (!nameInput.val().trim().trim()) {
+      return;
+    }
+    
+    upsertUser({
+      name: nameInput.val().trim(),
+      email: emailInput.val().trim(),
+      username: userName.val().trim()
+
+    });
+
+  }
 
 
+  function upsertUser(userData) {
+    console.log(userData)
+    $.post("/api/newuser", userData)
+      .then(function(data) {
+          console.log(data);
+      });
+  }
+
+});
+</script>
+
+
+
+
+
+  </body>
 
 </html>

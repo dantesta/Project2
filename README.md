@@ -21,57 +21,6 @@ Sequelize
 Bootstrap Templates
 
 
-Question 1: 
-
-Choose a color:
-
-1. Red
-2. Blue
-3. Green
-4. Purple
-5. Black
-
-Question 2:
-
-Which best describes your personality?
-
-1. Quiet and Reserved
-2. Outspoken and Assertive
-3. Kind and Conscientious
-4. Logical and Practical
-5. Adventurous and Creative
-
-Question 3:
-
-How Would Your Closest Friends Describe You?
-
-1. Too clever for my own good
-2. Solid, Loyal, Reliable
-3. Arrogant, but with good reason
-4. Natural Born Leader
-5. Unpredictable
-
-Question 4:
-
-Which weapon would you choose?
-
-1. Hammer
-2. Shield
-3. Bow & Arrow
-4. You
-5. Magic
-
-Question 5:
-
-What motivates you?
-
-1. I want justice
-2. I seek adventure
-3. A sense of duty
-4. I want to be better than everyone else
-5. I don't want to be alone
-
-
 
 
 

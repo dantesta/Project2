@@ -1,6 +1,8 @@
 var express = require("express");
 var path = require("path");
 var router = express.Router();
+var db = require("../../models");
+
 
 var starWarsList = require('../data/starWars.js');
 var marvelList = require('../data/marvel.js');
@@ -42,16 +44,6 @@ router.post('/api/starwars', function(req, res) {
 router.get('/api/starwars', function(req, res) {
     res.json(starWarsList);
 });
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -99,15 +91,6 @@ router.get('/api/marvel', function(req, res) {
 
 
 
-
-
-
-
-
-
-
-
-
 router.post('/api/rickAndMorty', function(req, res) {
     let newSurvey = req.body;
     let characterPick;
@@ -144,6 +127,22 @@ router.post('/api/rickAndMorty', function(req, res) {
 router.get('/api/rickAndMorty', function(req, res) {
     res.json(rickAndMortyList);
 });
+
+router.post("/api/newuser", function(req,res) {
+  console.log(req.body);
+
+  db.User.create({
+    name: req.body.name,
+    email: req.body.email,
+    username: req.body.username
+  }).then(function(data) {
+    res.json(data);
+  }).catch(function(err) {
+    if (err) throw err;
+  })
+});
+
+
 
 
 

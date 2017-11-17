@@ -1,0 +1,133 @@
+html,
+body {
+    min-height: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Audiowide', cursive;
+    background-image: url("https://i.pinimg.com/originals/97/86/ec/9786ec883756c755df35a331ff902f3b.png")
+}
+
+
+
+
+
+
+
+.body {
+    background-color: #0B1C36;
+    color: #D8BF78;
+}
+
+.jumbotron {
+    background-color: #2C3E50;
+}
+
+.jumbotron h1 {
+    font-size: 50px;
+    color: #D8BF78;
+    text-align: center;
+}
+
+.jumbotron p {
+    font-weight: bold;
+    text-align: center;
+    color: #D8BF78;
+}
+
+.h1,
+h1 {
+    text-align: center;
+    color: #D8BF78;
+    font-size: 50px;
+}
+
+.h2,
+h2 {
+    color: #D8BF78;
+}
+
+body {
+    color: #D8BF78;
+}
+
+.list-group-item {
+    background-color: #2C3E50;
+    border-color: #010101;
+}
+
+.form-control {
+    background-color: #337ab7;
+    color: #D8BF78;
+    border-color: #337ab7;
+}
+
+.btn-primary {
+    color: #D8BF78;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+
+a.list-group-item:focus,
+a.list-group-item:hover,
+button.list-group-item:focus,
+button.list-group-item:hover {
+    background-color: #D8BF78;
+    color: #337ab7;
+}
+
+.list-group-item.active,
+.list-group-item.active:focus,
+.list-group-item.active:hover {
+    background-color: #18BC9C;
+}
+
+a.list-group-item,
+button.list-group-item {
+    color: #D8BF78;
+}
+
+.list-group-item.active,
+.list-group-item.active:focus,
+.list-group-item.active:hover {
+    color: #337ab7;
+}
+
+.btn-danger {
+    color: #D8BF78;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+
+#header {
+    text-align: center;
+}
+
+.btn-danger:hover {
+    color: #D8BF78;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+.modal-content{
+	background-color: #337ab7;
+}
+.btn-default{
+	color: #D8BF78;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+.btn-default:hover{
+	color: #337ab7;
+    background-color: #D8BF78;
+    border-color: #D8BF78;
+}
+.btn-primary:hover{
+	color: #337ab7;
+    background-color: #D8BF78;
+    border-color: #D8BF78;
+}
+.btn-primary.focus, .btn-primary:focus{
+	color: #D8BF78;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}

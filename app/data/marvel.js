@@ -1,59 +1,74 @@
 var marvelList = [{
 
     name: 'Iron Man',
-    picture: 'https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Iron_Man_bleeding_edge.jpg/220px-Iron_Man_bleeding_edge.jpg',
+    picture: 'assets/images/ironman.jpg',
     description: "",
-    scores: [5,5,5,5,5]
+    scores: [1,2,3,5,4]
+    //15
 
 }, {
     name: 'The Hulk',
-    picture: 'https://upload.wikimedia.org/wikipedia/en/5/59/Hulk_%28comics_character%29.png',
+    picture: 'assets/images/hulk.png',
     description: "",
-    scores: [5,5,1,1,2]
+    scores: [3,4,5,5,5]
+    //22
 
 },  {
     name: 'Captain America',
-    picture: 'http://i.annihil.us/u/prod/marvel/movies/civilwar/images/captainamerica_hero.png',
+    picture: 'assets/images/captainamerica.png',
     description: "",
-    scores: [5,5,1,1,2]
+    scores: [2,5,2,2,3]
+    //14
 
 }, {
     name: 'Thor',
-    picture: 'https://vignette.wikia.nocookie.net/marvelmovies/images/c/c5/Avengers_age_of_ultron_thor-art.jpg/revision/latest/scale-to-width-down/280?cb=20160512192534',
+    picture: 'assets/images/thor.jpg',
     description: "",
-    scores: [5,5,1,1,2]
+    scores: [2,2,4,1,1]
+    //10
 
 }, {
     name: 'Black Widow',
-    picture: 'https://images-na.ssl-images-amazon.com/images/I/41aJ6RgCA5L._SL500_AC_SS350_.jpg',
+    picture: 'assets/images/blackwidow.jpg',
     description: "",
-    scores: [5,5,1,1,2]
+    scores: [5,1,5,5,5]
+    //21
 
 }, {
     name: 'Hawkeye',
-    picture: 'https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/6/6f/CW_Textless_Shield_Poster_02.jpg/revision/latest/scale-to-width-down/350?cb=20160515004919',
+    picture: 'assets/images/hawkeye.jpg',
     description: "",
-    scores: [5,5,1,1,2]
+    scores: [4,1,5,4,5]
+    //18
 
 }, {
     name: 'Spiderman',
-    picture: 'http://prodimage.images-bn.com/pimages/0190526000377_p0_v1_s1200x630.jpg',
+    picture: 'assets/images/spiderman.jpg',
     description: "",
-    scores: [5,5,1,1,2]
+    scores: [1,3,3,5,1]
+    //13
 
 }, {
     name: 'Black Panther',
-    picture: 'https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Black_Panther_OS_Vol_1_2.png/250px-Black_Panther_OS_Vol_1_2.png',
+    picture: 'assets/images/blackpanther.png',
     description: "",
-    scores: [5,5,1,1,2]
+    scores: [5,5,5,5,3]
+    //23
 
 }, {
     name: 'Scarlet Witch',
-    picture: 'https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/9/9a/CW_Textless_Shield_Poster_03.jpg/revision/latest/scale-to-width-down/350?cb=20160515004602',
+    picture: 'assets/images/scarlettwitch.jpg',
     description: "",
-    scores: [5,5,1,1,2]
+    scores: [1,1,1,3,2]
+    //8
 
-},
+}, {
+    name: 'Deadpool',
+    picture: 'assets/images/deadpool.jpg',
+    description: "",
+    scores: [1,2,5,5,4]
+    //17
+}
 
 
 ];
