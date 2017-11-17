@@ -21,18 +21,6 @@
         <h1>Quiz Questions</h1>
         <br><br>
 
-        <h2>About You:</h2>
-
-        <div class="form-group">
-            <label class="control-label" for="name">Full Name:</label>
-            <input type="text" name="" id="name" class="form-control" required>
-        </div>
-
-        <div class="form-group">
-            <label class="control-label" for="photo">Email Address (Optional):</label>
-            <input type="text" name="" id="photo" class="form-control">
-        </div>
-        <br><br>
 
         <div class="form-group">
             <h3><strong>Question #1</strong></h3>
@@ -120,6 +108,7 @@
                     <div class="modal-body">
                         <h2 id="matchName"></h2>
                         <img id="matchImg" src="" alt="">
+                        <h3 id="matchDesc"></h3>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -163,8 +152,7 @@
                     scoreArr[i] = parseInt(scoreArr[i]);
                 }
                 var newSurvey = {
-                    name: $("#name").val().trim(),
-                    picture: $("#photo").val().trim(),
+
                     scores: scoreArr
                 };
                 console.log(newSurvey);
@@ -174,6 +162,7 @@
                         $("#resultsModal").modal('toggle');
                         $("#matchName").text(data[0].name);
                         $('#matchImg').attr("src", data[0].picture);
+                        $('#matchDesc').text(data[0].description);
                     });
             } else {
                 alert('You missed an answer!');

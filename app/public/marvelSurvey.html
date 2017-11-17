@@ -44,7 +44,7 @@
             <option value="2">Blue</option>
             <option value="3">Green</option>
             <option value="4">Purple</option>
-            <option value="5">Yellow</option>
+            <option value="5">Black</option>
           </select>
         </div>
 
@@ -63,14 +63,14 @@
 
         <div class="form-group">
             <h3><strong>Question #3</strong></h3>
-            <label class="control-label" for="q3">What role best describes you?</label>
+            <label class="control-label" for="q3">How Would Your Closest Friends Describe You?</label>
             <select data-placeholder="" class="chosen-select" id="q3">
               <option value=""></option>
-              <option value="1">Lone Wolf</option>
-              <option value="2">Leader</option>
-              <option value="3">Diplomat</option>
-              <option value="4">Team Player</option>
-              <option value="5">Enforcer</option>
+              <option value="1">Too clever for my own good</option>
+              <option value="2">Solid, Loyal, Reliabler</option>
+              <option value="3">Arrogant, but with good reason</option>
+              <option value="4">Natural Born Leader</option>
+              <option value="5">Unpredictable</option>
             </select>
         </div>
 
@@ -79,24 +79,24 @@
             <label class="control-label" for="q4">Which weapon would you choose?</label>
             <select data-placeholder="" class="chosen-select" id="q4">
 	 		<option value=""></option>
-            <option value="1">Blaster</option>
-            <option value="2">Lightsaber</option>
-            <option value="3">Staff</option>
-            <option value="4">Jedi Mind Trick</option>
-            <option value="5">Force Lightning</option>
+            <option value="1">Hammer</option>
+            <option value="2">Shield</option>
+            <option value="3">Magic</option>
+            <option value="4">Bow and Arrow</option>
+            <option value="5">You are the weapon</option>
       	</select>
         </div>
 
         <div class="form-group">
             <h3><strong>Question #5</strong></h3>
-            <label class="control-label" for="q5">If a fight breaks out, what do you do?</label>
+            <label class="control-label" for="q5">What motivates you?</label>
             <select data-placeholder="" class="chosen-select" id="q5">
 	 		<option value=""></option>
-            <option value="1">Take on everyone by yourself</option>
-            <option value="2">Jump in without hesitation</option>
-            <option value="3">Try to stop the fight</option>
-            <option value="4">Run away and hide</option>
-            <option value="5">Protect your friends</option>
+            <option value="1">I want justice</option>
+            <option value="2">I seek adventure</option>
+            <option value="3">A sense of duty</option>
+            <option value="4">I want to be better than everyone else</option>
+            <option value="5">I don't want to be alone</option>
       	</select>
         </div>
 
@@ -168,6 +168,7 @@
                     scores: scoreArr
                 };
                 console.log(newSurvey);
+                
                 $.post("/api/marvel", newSurvey)
                     .done(function(data) {
                         console.log(data);

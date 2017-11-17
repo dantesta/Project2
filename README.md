@@ -29,7 +29,7 @@ Choose a color:
 2. Blue
 3. Green
 4. Purple
-5. Yellow
+5. Black
 
 Question 2:
 
@@ -43,40 +43,36 @@ Which best describes your personality?
 
 Question 3:
 
-What role best describes you?
+How Would Your Closest Friends Describe You?
 
-1. Lone Wolf
-2. Leader
-3. Diplomat
-4. Team Player
-5. Enforcer
+1. Too clever for my own good
+2. Solid, Loyal, Reliable
+3. Arrogant, but with good reason
+4. Natural Born Leader
+5. Unpredictable
 
 Question 4:
 
 Which weapon would you choose?
 
-1. Blaster
-2. Lightsaber
-3. Staff
-4. Jedi Mind Trick
-5. Force Lightning
+1. Hammer
+2. Shield
+3. Bow & Arrow
+4. You
+5. Magic
 
 Question 5:
 
-If a fight breaks out, what do you do?
+What motivates you?
 
-1. Take out everyone by yourself
-2. Jump in without hesitation
-3. Try to stop the fight
-4. Run away and hide
-5. Protect your friends
+1. I want justice
+2. I seek adventure
+3. A sense of duty
+4. I want to be better than everyone else
+5. I don't want to be alone
 
 
 
-To-do
-Connect Database
-Finish Styling
-Create new categories
 
 
 
