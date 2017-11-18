@@ -5,20 +5,51 @@
     <title>Star Wars Quiz</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
-    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="assets/css/starwars.css">
 </head>
 
 <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Which Character Are You?</a>
+
+
+      </div>
+    </nav>
+
+    <header class="masthead">
+      <div class="container">
+              <h1><strong>Star Wars Quiz</strong></h1><br>
+
+
+      <div class="row">
+
+      <div class="col-sm-12">
+        <img class="img-fluid" src="assets/images/starWars.png" width="300px">
+
+      </div>
+
+      </div>
+
+      </div>
+    </header>
+
+
+
+<section id="contact">
     <div class="container">
-        <h1>Star Wars Quiz</h1>
-        <br>
-        
-        <br>
+
+        <br><br>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="form-group">
 
                     <label class="control-label" for="q1"><h4>Choose a color:</h4></label>
@@ -31,7 +62,7 @@
                     </select>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="form-group">
 
                     <label class="control-label" for="q2"><h4>Which best describes your personality?</h4></label>
@@ -44,9 +75,9 @@
                     </select>
                 </div>
             </div>
-        </div>
+        
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="form-group">
 
                     <label class="control-label" for="q3"><h4>What role best describes you?</h4></label>
@@ -59,7 +90,10 @@
                     </select>
                 </div>
                 </div>
-                <div class="col-md-6">
+           </div> 
+           </div>  
+           <div class="row"> 
+                <div class="col-md-4">
                 <div class="form-group">
 
                     <label class="control-label" for="q4"><h4>Which weapon would you choose?</h4></label>
@@ -72,7 +106,7 @@
                     </select>
                 </div>
                 </div>
-                </div>
+            <div class="col-md-4">
                 <div class="form-group">
 
                     <label class="control-label" for="q5"><h4>If a fight breaks out, what do you do?</h4></label>
@@ -84,10 +118,28 @@
                         <option name="question5" value="5">Protect your friends</option>
                     </select>
                 </div>
+                </div>
+            <div class="col-md-4">
+                <div class="form-group">
+
+                    <label class="control-label" for="q6"><h4>What kind of childhood did you have?</h4></label>
+                    <select class="list-group">
+                        <option name="question6" value="1">Moody and self-involved</option>
+                        <option name="question6" value="2">Traumatic, best explained in prequels</option>
+                        <option name="question6" value="3">Happy memories at home</option>
+                        <option name="question6" value="4">Good, but boring</option>
+                        <option name="question6" value="5">For some reason, I can't remember</option>
+                    </select>
+                </div>
+                </div>
+                </div>
+            </div>
                 <br>
                 <br>
                 <!-- Submit Button -->
-                <button type="submit" class="btn btn-primary btn-lg" id="submit">Submit</button>
+                <div style="text-align:center;">
+                    <button type="submit" class="btn btn-primary btn-lg" id="submit">Submit</button>
+                </div>
                 <br>
                 <br>
                 <br>
@@ -103,7 +155,10 @@
                             </div>
                             <div class="modal-body">
                                 <h2 id="matchName"></h2>
+                                <br>
                                 <img id="matchImg" src="" alt="">
+                                <br>
+                                <h3>The force is with you!</h3>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -112,6 +167,22 @@
                     </div>
                 </div>
             </div>
+        </section>
+                <!-- Footer -->
+    <footer class="text-center">
+
+      <div class="footer-below">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              Copyright &copy; 2017 Adrian Sirko, Daniel Testa, Mike Troutman
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+            
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
             <script src=" https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -129,10 +200,11 @@
                         $('option[name=question2]:checked').val(),
                         $('option[name=question3]:checked').val(),
                         $('option[name=question4]:checked').val(),
-                        $('option[name=question5]:checked').val()
+                        $('option[name=question5]:checked').val(),
+                        $('option[name=question6]:checked').val()
                     ]
                 }
-                $.post("/api/starwars", newSurvey)
+                $.post("/api/starWars", newSurvey)
                     .done(function(data) {
                         console.log(data);
                         $("#resultsModal").modal('toggle');
@@ -146,7 +218,7 @@
     <style type="text/css">
         
         #matchImg {
-            width: 500px;
+            width: 400px;
         }
     </style>
 

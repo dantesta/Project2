@@ -29,7 +29,7 @@ router.post('/api/starwars', function(req, res) {
             });
         }
 
-    let maxScore = 25;
+    let maxScore = 30;
     characterConnect.map(function(obj) {
         if (obj.totalDiff < maxScore) maxScore = obj.totalDiff;
     });
@@ -67,7 +67,7 @@ router.post('/api/marvel', function(req, res) {
             });
         }
 
-    let maxScore = 25;
+    let maxScore = 30;
     characterConnect.map(function(obj) {
         if (obj.totalDiff < maxScore) maxScore = obj.totalDiff;
     });
@@ -86,6 +86,9 @@ router.get('/api/marvel', function(req, res) {
 
 
 // third GET/POST route
+
+
+
 
 
 
@@ -111,7 +114,7 @@ router.post('/api/rickAndMorty', function(req, res) {
             });
         }
 
-    let maxScore = 25;
+    let maxScore = 30;
     characterConnect.map(function(obj) {
         if (obj.totalDiff < maxScore) maxScore = obj.totalDiff;
     });
@@ -127,6 +130,10 @@ router.post('/api/rickAndMorty', function(req, res) {
 router.get('/api/rickAndMorty', function(req, res) {
     res.json(rickAndMortyList);
 });
+
+
+
+
 
 router.post("/api/newuser", function(req,res) {
   console.log(req.body);
