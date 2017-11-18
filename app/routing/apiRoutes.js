@@ -72,9 +72,9 @@ router.post('/api/marvel', function(req, res) {
         if (obj.totalDiff < maxScore) maxScore = obj.totalDiff;
     });
 
-    marvelList = characterConnect.filter(function(e) { return e.totalDiff == maxScore; });
+    characterPick = characterConnect.filter(function(e) { return e.totalDiff == maxScore; });
 
-    res.json(marvelList);
+    res.json(characterPick);
     marvelList.push(newSurvey);
 
 });
@@ -119,9 +119,9 @@ router.post('/api/rickAndMorty', function(req, res) {
         if (obj.totalDiff < maxScore) maxScore = obj.totalDiff;
     });
 
-    rickAndMortyList = characterConnect.filter(function(e) { return e.totalDiff == maxScore; });
+    characterPick = characterConnect.filter(function(e) { return e.totalDiff == maxScore; });
 
-    res.json(rickAndMortyList);
+    res.json(characterPick);
     rickAndMortyList.push(newSurvey);
 
 });

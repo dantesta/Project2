@@ -9,7 +9,7 @@ We want a make a personality quiz app that matches you up with a character from 
 
 2) Your motivation for this project (what problem is this solving)
 
-The idea for this project is designed around a fun concept so that users can connect to their favoite characters and have a good time doing it. Our idea in a lot of ways is similar to the friend finder homework, so we will be referencing that code as a boiler plate for our project in terms of the logic for our question algorithm.
+The idea for this project is designed around a fun concept so that users can connect to their favorite characters and have a good time doing it. Our idea in a lot of ways is similar to the friend finder homework, so we will be referencing that code as a boiler plate for our project in terms of the logic for our question algorithm.
 
 
 3) Any technologies you may want to use (not 100% necessary as they come in as you develop, but knowing ahead of time could help us pinpoint any issues you may run into)
