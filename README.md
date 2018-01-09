@@ -1,4 +1,4 @@
-# Project2
+# Which Character Are You?
 
 Dan Testa, Mike Troutman, Adrian Sirko
 
